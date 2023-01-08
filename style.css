@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Antonio', sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* layout */
+
+.container {
+  width: 100%;
+  background-color: #1E1E1E;
+  font-family: 'Antonio', sans-serif;
+}
+.inner {
+  width: 1300px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* common css */
+
+.text-style {
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.line {
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #d9d9d9a9;
+  width: 96%;
+}
+
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+nav {
+  padding: 40px 50px;
+  color: #fff;
+}
+.logo-img {
+  width: 68px;
+}
+.logo-text {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.gnb li {
+  margin: 10px;
+}
+
+
+/* main */
+
+.intro {
+  width: 100%;
+  height: 100vh;
+}
+.intro-inner {
+  width: 100%;
+  height: 100vh;
+  background: url(images/mainBG.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  position: absolute;
+}
+.intro-inner::before {
+  content: '';
+  background: linear-gradient(to top, #1E1E1E,#1e1e1ec5,#1e1e1e3f,#ffff0002);
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title-text {
+  margin-top: 200px;
+  margin-left: 80px;
+  color: #fff;
+  position: absolute;
+}
+.title-text h1 {
+  font-size: 200px;
+}
+.title-text h3 {
+  font-size: 26px;
+  margin-left: 10px;
+  margin-top: 30px;
+  color: #bbb;
+}
+
+
+/* about */
+.info-items {
+  width: 100%;
+}
+.info-item {
+  width: 33%;
+  padding: 30px;
+}
+.about {
+  width: 100%;
+  padding: 80px 0;
+}
+.desc-up {
+  height: 70px;
+  margin-bottom: 20px;
+}
+.info-desc-text {
+  margin-left: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+  color: #bbb;
+}
+.info-btn {
+  width: 100%;
+ font-size: 18px;
+ margin-bottom: 40px;
+}
+.info-btn a {
+  display: block;
+  margin-left: 52px;
+}
+
+
+/* ranking */
+.ranking {
+  text-align: center;
+}
+.ranking p {
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 300;
+  color: #bbb;
+}
+.ranking h3 {
+font-size: 46px;
+font-weight: 500;
+line-height: 1.5em;
+margin-bottom: 20px;
+}
+.photo_slider {}
+.photobox {
+  width: 380px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.photobox img {
+  width: 100%;
+}
+.photo-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.02));
+}
+.photo-content h4 {
+  font-size: 32px;
+  padding-top: 380px;
+}
+.photo-content p {
+  font-size: 20px;
+  margin-top: 20px;
+}
